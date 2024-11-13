@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Start Server",
+            "command": "java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar ./server.jar nogui",
+            "problemMatcher": [],
+            "options": {
+                "cwd": "./server",
+            },
+            "runOptions": {
+                "instanceLimit": 1
+            }
+        },
+        {
+            "type": "shell",
+            "label": "Build Jar",
+            "command": "mvn package",
+            "problemMatcher": [],
+        }
+    ]
+}

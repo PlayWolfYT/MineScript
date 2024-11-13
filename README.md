@@ -2,15 +2,14 @@
 
 1. To get started with this project, you first have to `git clone` this repository.
 
-2. Install all the necessary dependencies via `mvn install`
+**Note:** Make sure you have Maven installed on your system for the next steps
 
-    **Note:** Make sure you have Maven installed on your system.
+2. Run `mvn paper-nms:init` to initialize `nms` (net.minecraft.server, used for stuff related to sending packets)
 
-3. Run `mvn paper-nms:init` to initialize `nms` (net.minecraft.server, used for stuff related to sending packets)
 
-4. Make changes to the code
+3. Make changes to the code
 
-5. Run `mvn package` to generate a plugin jar file.
+4. Run `mvn package` to generate a plugin jar file.
 
 ## During development
 
